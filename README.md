@@ -63,12 +63,11 @@ These are the controllers that we use for this app:
 ![](https://imgur.com/NpP8elB.png)
 
 ## Technologies Used
-* Express
-* Handlebars
-* Bootstrap
-* MySQL
-* SequelPro
-* URL
+* [Express](https://www.npmjs.com/package/express)
+* [Handlebars](http://handlebarsjs.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [MySQL](https://www.npmjs.com/package/mysql)
+* [URL](https://www.npmjs.com/package/url)
 
 ## User Interface (UI)
 These are the UI for this app:
