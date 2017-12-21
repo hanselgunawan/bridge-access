@@ -62,6 +62,56 @@ These are the controllers that we use for this app:
 
 ![](https://imgur.com/NpP8elB.png)
 
+## Technologies Used
+* Express
+* Handlebars
+* Bootstrap
+* MySQL
+* SequelPro
+* URL
+
 ## User Interface (UI)
 These are the UI for this app:
 ### Product Categories
+
+### Product Details
+
+### Shopping Cart
+
+### Checkout
+
+### Success Checkout
+
+## Demo
+These are the demos for this app:
+### Filter by Product Category
+
+### Filter by Product Sub-Category
+
+### Filter Products by Price
+
+### Search by User Input
+
+### Pagination
+
+### Add a Product to Cart
+
+### Success Checkout
+
+## Bridge Access Production Link
+https://guarded-gorge-21782.herokuapp.com/shop/product_categories/1
+## Our Team
+* **Hansel B Tritama**
+	* E-mail: hanselgunawan94@gmail.com
+	* LinkedIn: https://www.linkedin.com/in/hanselbtritama/
+	* Github: https://github.com/hanselgunawan
+
+* **William Tan**
+	* E-mail: william.tan@biola.edu
+	* LinkedIn: https://www.linkedin.com/in/williamtan/
+	* Github: https://github.com/william--tan
+
+* **Andre Gunawan**
+	* E-mail: johnandrechen@gmail.com
+	* LinkedIn: https://www.linkedin.com/in/andre-a-gunawan/
+	* Github: https://github.com/andregunawan
