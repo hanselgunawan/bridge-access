@@ -61,3 +61,7 @@ These are the views that we use for this app:
 These are the controllers that we use for this app:
 
 ![](https://imgur.com/NpP8elB.png)
+
+## User Interface (UI)
+These are the UI for this app:
+### Product Categories
