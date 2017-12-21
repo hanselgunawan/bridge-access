@@ -5,7 +5,7 @@ Since their platform is still early in development -- we are tasked to do their 
 ## Entity-Relationship-Diagram (ERD)
 This is the ERD for the **shopping** module:
 
-ERD IMAGE PUT HERE
+![](https://imgur.com/gbYEkz9.png)
 
 ### ERD workflow:
 1. Customer adds items to their shopping cart, but they can update the quantity or remove items from the cart
@@ -60,4 +60,4 @@ These are the views that we use for this app:
 
 These are the controllers that we use for this app:
 
-PUT MODEL - CONTROLLER IMAGE
+![](https://imgur.com/NpP8elB.png)
