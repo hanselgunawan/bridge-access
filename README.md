@@ -54,7 +54,7 @@ Cart model stores all queries for:
 ### VIEW
 These are the views that we use for this app:
 
-PUT VIEW IMAGES
+![](https://imgur.com/JDGXelr.png)
 
 ### CONTROLLER
 
