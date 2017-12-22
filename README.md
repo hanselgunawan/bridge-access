@@ -75,35 +75,44 @@ These are the UI for this app:
 ![](https://imgur.com/oXEROjL.png)
 
 ### Product Details
-![](https://imgur.com/JDGXelr.png)
+![](https://imgur.com/oSk1DG0.png)
 
 ### Shopping Cart
-![](https://imgur.com/JDGXelr.png)
+![](https://imgur.com/aSss0kq.png)
 
 ### Checkout
-![](https://imgur.com/JDGXelr.png)
+![](https://imgur.com/Ag7d2ua.png)
+![](https://imgur.com/6xZBGrF.png)
 
 ### Success Checkout
-![](https://imgur.com/JDGXelr.png)
+![](https://imgur.com/5KElzt7.png)
 
 ## Demo
 These are the demos for this app:
 ### Filter by Product Category
+![](https://imgur.com/qM1j7NK.gif)
 
 ### Filter by Product Sub-Category
+![](https://imgur.com/Fpub89w.gif)
 
 ### Filter Products by Price
+![](https://imgur.com/qkkEjeR.gif)
 
 ### Search by User Input
+![](https://imgur.com/eelzkEN.gif)
 
 ### Pagination
+![](https://imgur.com/eo7GRye.gif)
 
 ### Add a Product to Cart
+![](https://imgur.com/VpBagjD.gif)
 
 ### Success Checkout
+![](https://imgur.com/5v4xSSY.gif)
 
 ## Bridge Access Production Link
 https://guarded-gorge-21782.herokuapp.com/shop/product_categories/1
+
 ## Our Team
 * **Hansel B Tritama**
 	* E-mail: hanselgunawan94@gmail.com
