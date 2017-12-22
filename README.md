@@ -3,7 +3,7 @@
 Bridge Southeast Asia is a financial technology firm based in Singapore and the Philippines. Their platform, **Bridge Access**, provides financial services for affiliated employees to do loans, insurance and micropayments by integrating to existing payroll services.
 Since their platform is still early in development -- we are tasked to do their **shopping** module which allows clients to purchase items through a third-party online vendor, www.goods.ph . Customers can purchase items by payment installments (called *micropayments*) which are automatically deducted from their payroll.
 ## Entity-Relationship-Diagram (ERD)
-This is the ERD for the **shopping** module:
+This is the ERD for this **shopping** module:
 
 ![](https://imgur.com/gbYEkz9.png)
 
