@@ -72,14 +72,19 @@ These are the controllers that we use for this app:
 ## User Interface (UI)
 These are the UI for this app:
 ### Product Categories
+![](https://imgur.com/oXEROjL.png)
 
 ### Product Details
+![](https://imgur.com/JDGXelr.png)
 
 ### Shopping Cart
+![](https://imgur.com/JDGXelr.png)
 
 ### Checkout
+![](https://imgur.com/JDGXelr.png)
 
 ### Success Checkout
+![](https://imgur.com/JDGXelr.png)
 
 ## Demo
 These are the demos for this app:
