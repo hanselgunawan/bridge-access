@@ -136,7 +136,7 @@ Product Card Styles
                             {{!-- Add to cart button --}}
                             <a id="addToCartBtn" class="btn btn-xs btn-add-to-cart mt-2" role="button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</a>
                             {{!-- Back to products categories button --}}
-                            <a class="btn btn-secondary mt-2" role="button" href='/cart'>View Cart</a>
+                            <a class="btn btn-secondary mt-2" role="button" id="viewCartBtn">View Cart</a>
                             <a class="btn btn-secondary mt-2" role="button" onclick="window.history.back(); return false;">Back</a>
                         </div>
                     </div>
@@ -255,7 +255,7 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             url: '/cart/insert',
-            data: {'qty': qty, 'item_id': '{{item_id}}'},
+            data: {user_id: Cookie['user_id'], 'qty': qty, 'item_id': '{{item_id}}'},
             //dataType:'JSON',
             success: function(data){
                 console.log("SUCCESS");
@@ -264,5 +264,11 @@ $(document).ready(function(){
             }
         })
     });
+
+
+    $("#viewCartBtn").on("click", function(){
+        window.location = '/cart?user_id='+Cookie['user_id'];
+    });
+
 
 </script>

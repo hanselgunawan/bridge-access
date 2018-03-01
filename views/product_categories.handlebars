@@ -286,7 +286,7 @@
                 </span>
             </div>
             <div class="col-md-2 nav-item">
-                <a href="/cart"><button type="button" class="btn btn-outline-warning btn-sm pull-right" style="height: 35px; margin-left: 4px; width: 100%;"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</button></a>
+                <a id="viewCartBtn"><button type="button" class="btn btn-outline-warning btn-sm pull-right" style="height: 35px; margin-left: 4px; width: 100%;"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</button></a>
             </div>
         </div>
 
@@ -442,6 +442,9 @@
 
 <script type="text/javascript">
 
+    $("#viewCartBtn").on("click", function(){
+        window.location = '/cart?user_id='+Cookie['user_id'];
+    });
 
     $(".searchItemBtn").on("click", function () {
         if($("#search_term").val() === "")

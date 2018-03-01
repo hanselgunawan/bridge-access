@@ -440,7 +440,7 @@
         $.ajax({ //ajax call
             type: "POST", //method == POST
             url: base_url+'product/change_quantity', //url to be called
-            data: { 'qty' :  $(this).val(), 'id' : $(this).siblings("input").val() }, //data to be send
+            data: { 'qty' :  $(this).val(), 'id' : $(this).siblings("input").val(), user_id: Cookie['user_id']}, //data to be send
             dataType:'JSON',
             success:function(data){
                 window.location.reload();
@@ -455,7 +455,7 @@
             $.ajax({
                 url: base_url+'product/delete_item',
                 type: 'POST',
-                data: {'id':item_id},
+                data: {'id':item_id, user_id: Cookie['user_id']},
                 dataType:'JSON',
                 success:function(data){
                     window.location.reload();
@@ -582,7 +582,8 @@
                 address1: $("#address-line1").val().trim(),
                 address2: $("#address-line2").val().trim(),
                 city: $("#city").val().trim(),
-                zip: $("#postal-code").val().trim()
+                zip: $("#postal-code").val().trim(),
+                user_id: Cookie['user_id']
             }
 
             $.ajax({
@@ -606,7 +607,7 @@
             data: {"subtotal": subtotal,
                    "grandtotal": grandtotal,
                    "interest": interest,
-                   "shipping_address_id": address_id},
+                   "shipping_address_id": address_id, 'user_id': Cookie["user_id"]},
             dataType: "json",
             success:function(response){
                 order_header_id = response["insertId"];
@@ -621,7 +622,7 @@
             url: 'create_order_details',
             data: {"order_header_id": order_header_id,
                    "cart_item_id": cart_item_id,
-                   "cart_quantity": cart_quantity},
+                   "cart_quantity": cart_quantity, 'user_id': Cookie["user_id"]},
             success: function(response){
                 //console.log("success at order detail inserts");
             }
@@ -637,7 +638,8 @@
             data: {"total_amount": grandtotal,
                    "order_header_id": order_header_id,
                    "date_start": micropayment[0].payment_date_sql,
-                   "date_finish": micropayment[micropayment.length-1].payment_date_sql},
+                   "date_finish": micropayment[micropayment.length-1].payment_date_sql,
+                   "user_id": Cookie["user_id"]},
             dataType: "json",
             success:function(response){
                 micropayment_id = response["insertId"];
@@ -655,7 +657,7 @@
                     "principal": principal,
                     "interest": interest_amt,
                     "payment_amount": payment_amount,
-                    "balance": balance
+                    "balance": balance, 'user_id': Cookie["user_id"]
             },
             success:function(response){
                 console.log("repayment insert success")
@@ -669,7 +671,7 @@
             data: { "name": "Hansel",
                     "order_header_id": order_header_id,
                     "grandtotal": $("#grandtotal").attr('value'),
-                    "payouts": num_payouts
+                    "payouts": num_payouts, 'user_id': Cookie["user_id"]
             },
             success: function(response){
                 $.ajax({

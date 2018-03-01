@@ -5,9 +5,10 @@ const router = express.Router();
 var address = require("../models/address.js")
 
 exports.viewCart = async (req, res) => {
-	var obj = {cart_content: await cart.view(1),
-			   cart_total: (await cart.total_cost(1))[0]}
+	var obj = {cart_content: await cart.view(req.query.user_id),
+			   cart_total: (await cart.total_cost(req.query.user_id))[0]}
 	res.render("cart_display", obj);
+
 	//res.json(obj)
 };
 
@@ -23,7 +24,7 @@ exports.updateQuantity = async (req, res) => {
 		b = [b];
 
 	await cart.updateQuantity(b, a);
-	res.redirect('/cart');
+	res.sendStatus(200)
 };
 
 exports.deleteItem = async (req, res) => {
@@ -33,7 +34,7 @@ exports.deleteItem = async (req, res) => {
 
 exports.insertItem = async (req, res) => {
 	console.log("itemid="+req.body.item_id+" | qty="+req.body.qty);
-	await cart.insert(1, req.body.item_id, req.body.qty)
+	await cart.insert(req.body.user_id, req.body.item_id, req.body.qty)
 	//res.redirect('/cart');
 	res.sendStatus(200);
 };
@@ -48,6 +49,6 @@ exports.createOrder = async (req, res) => {
 }
 
 exports.clearCartPurchased = async (req, res) => {
-	result = await cart.clearCartPurchased(1);
+	result = await cart.clearCartPurchased(req.body.user_id);
 	res.send(result);
 }

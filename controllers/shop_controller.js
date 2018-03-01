@@ -148,7 +148,7 @@ function pagination(obj, productData, page)
 }
 
 exports.addAddress = async (req, res) => {
-    let result = await address.add(1, req.body.name, req.body.address1, req.body.address2, req.body.city, req.body.zip)
+    let result = await address.add(req.body.user_id, req.body.name, req.body.address1, req.body.address2, req.body.city, req.body.zip)
 
     res.send(result);
 }

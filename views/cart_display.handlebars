@@ -191,7 +191,7 @@
         $.ajax({ //ajax call
             type: "POST", //method == POST
             url: base_url+'product/change_quantity', //url to be called
-            data: { 'qty' :  $(this).val(), 'id' : $(this).siblings("input").val() }, //data to be send
+            data: { 'qty' :  $(this).val(), 'id' : $(this).siblings("input").val(), 'user_id': Cookie["user_id"]}, //data to be send
             dataType:'JSON',
             success:function(data){
                 window.location.reload();
@@ -222,10 +222,9 @@
         $.ajax({
             type: "POST",
             url: '/cart/update',
-            data: {'a':a, 'cid':cid_a},
+            data: {'a':a, 'cid':cid_a, 'user_id': Cookie["user_id"]},
             success:function(data){
                 //calculateTotal();
-                window.location.reload();
             }
         })
     });

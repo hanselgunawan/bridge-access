@@ -25,7 +25,7 @@ var cart = {
 					 FROM shoppingCart s, bridge_goodsph_products p 
 					 WHERE s.item_id = p.id 
 					 	AND status = 'CURRENT' 
-					 	AND s.account_id = 1;`
+					 	AND s.account_id = ${account_id};`
 			connection.query(q, (err, result) => {
 				if (err) throw err;
 				resolve(result);

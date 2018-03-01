@@ -12,7 +12,7 @@ var address = {
 	add: (account_id, name, address1, address2, city, zip) => {
 		return new Promise ((resolve, reject) => {
 			var q = `INSERT INTO Address (account_id, name, address1, address2, city, zip) 
-			VALUES (1, "${name}", "${address1}", "${address2}", "${city}", ${zip});`;
+			VALUES ("${account_id}", "${name}", "${address1}", "${address2}", "${city}", ${zip});`;
 			connection.query(q, (err, result) =>{
 				if (err) throw err;
 				resolve(result);

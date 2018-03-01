@@ -4,7 +4,7 @@ const url = require("url");
 const router = express.Router();
 
 exports.create_order_header = async (req, res) => {
-	result = await order.createOrderHeader(1, req.body.subtotal, req.body.grandtotal, req.body.interest, req.body.shipping_address_id)
+	result = await order.createOrderHeader(req.body.user_id, req.body.subtotal, req.body.grandtotal, req.body.interest, req.body.shipping_address_id)
 	res.send(result);
 };
 
@@ -23,7 +23,7 @@ exports.create_order_details = async (req, res) => {
 };
 
 exports.create_micropayment = async (req, res) => {
-	result = await order.createMicropayment(1, req.body.order_header_id, req.body.total_amount, req.body.date_start, req.body.date_finish);
+	result = await order.createMicropayment(req.body.user_id, req.body.order_header_id, req.body.total_amount, req.body.date_start, req.body.date_finish);
 	res.send(result);
 };
 
