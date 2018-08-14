@@ -44,6 +44,16 @@ These are the demos for this app:
 ### Success Checkout
 ![](https://imgur.com/5v4xSSY.gif)
 
+## Technologies Used
+* [Express](https://www.npmjs.com/package/express)
+* [Handlebars](http://handlebarsjs.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [MySQL](https://www.npmjs.com/package/mysql)
+* [URL](https://www.npmjs.com/package/url)
+
+## Bridge Access Production Link
+https://guarded-gorge-21782.herokuapp.com/shop/product_categories/1
+
 ## Entity-Relationship-Diagram (ERD)
 This is the ERD for this **shopping** module:
 
@@ -103,16 +113,6 @@ These are the views that we use for this app:
 These are the controllers that we use for this app:
 
 ![](https://imgur.com/NpP8elB.png)
-
-## Technologies Used
-* [Express](https://www.npmjs.com/package/express)
-* [Handlebars](http://handlebarsjs.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [MySQL](https://www.npmjs.com/package/mysql)
-* [URL](https://www.npmjs.com/package/url)
-
-## Bridge Access Production Link
-https://guarded-gorge-21782.herokuapp.com/shop/product_categories/1
 
 ## Our Team
 * **Hansel B Tritama**
